@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "ConstXiong",
+	"version": "1.0",
+	"description": "CSDN 阅读文章，自动一键三连",
+	"author": "ConstXiong",
+	"icons":
+	{
+		"48": "csdn_triplet.png",
+		"128": "csdn_triplet.png"
+	},
+	"browser_action": 
+	{
+		"default_icon": "csdn_triplet.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": 
+	[
+		{
+			"matches": ["https://blog.csdn.net/*"],
+			"js": ["jquery.min.js","content-script.js"]
+		}
+	],
+	"web_accessible_resources": 
+	[
+		
+	]
+}
